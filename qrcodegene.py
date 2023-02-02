@@ -27,8 +27,10 @@ with open('./datafile/namelist.csv') as f:
         color=color.removesuffix("']")
         #qrコード生成
         img = qr.make_image(fill_color=f"{color}", back_color="white")
+        #文字列を'/'で分割
+        a=a.split('/')
         #qrコードの保存
-        img.save(f"./qrfile/qrcode{i}.png")
+        img.save(f"./qrfile/{a[-1]}.png")
         #変数の更新
         i+=1
 

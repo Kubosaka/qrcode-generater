@@ -22,8 +22,10 @@ with open('./datafile/namelist.csv') as f:
         )
         qr.add_data(a)
         img = qr.make_image(image_factory=StyledPilImage,embeded_image_path="./datafile/NUTMEG.jpeg")
+        #文字列を'/'で分割
+        a=a.split('/')
         #qrコードの保存
-        img.save(f"./qrfile2/qrcode{i}.png")
+        img.save(f"./qrfile2/{a[-1]}.png")
         #変数の更新
         i+=1
         
