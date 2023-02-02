@@ -3,3 +3,6 @@
 
 また
 qrcodeとPILをpipでインストールしておく
+
+qrcodegene.pyはランダム色でqrコードを生成
+qrcodegene2.pyは真ん中にNUTMEGのロゴを入れてqrコード生成
